@@ -1,8 +1,67 @@
 :root {
   --black: #2b2b2b;
 }
-
+.debug {
+  border: 1px solid red;
+}
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+}
 body {
+  height: 100dvh;
+  width: 100dvw;
   background: var(--black);
   color: whitesmoke;
+  flex-direction: column;
+}
+
+.bracket-container {
+  width: 100dvw;
+  height: fit-content;
+  gap: 1rem;
+  border: solid 1px white;
+}
+
+.bout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.round {
+  gap: 1rem;
+}
+
+.wrap {
+  width: 100%;
+  height: fit-content;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 10px black;
+}
+
+.competitor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px white;
+  border-radius: 5px;
+  height: 2rem;
+  width: 80%;
 }
